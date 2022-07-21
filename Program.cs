@@ -22,11 +22,11 @@ namespace Pensionato_Ex_Vetor
                 int quarto = int.Parse(Console.ReadLine());
 
 
-                    // Testa se o quarto ja está reservado
-                    while (q1[quarto] != null)
+                    // Testa se o quarto EXISTE dentro do Array ou ja está reservado
+                    while (q1.Length < quarto + 1 ||  q1[quarto] != null  )
                     {
 
-                        Console.WriteLine("JÁ RESERVADO - Digite o quarto a reservar: ");
+                        Console.WriteLine("Quarto INEXISTENTE ou JÁ RESERVADO - Digite o quarto a reservar: ");
                         quarto = int.Parse(Console.ReadLine());
 
                   }
